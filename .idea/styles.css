@@ -1,0 +1,82 @@
+.app {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial;
+}
+
+.table th {
+    border: 1px solid gray;
+    padding: 10px;
+    font-weight: bold;
+    background: #eeeeee;
+}
+
+.table .month {
+    background: lightgray;
+}
+
+.table td {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: right;
+}
+
+/* General label-column styling */
+.table .label-column {
+    border: none;
+    border-right: 3px solid black; /* Thicker right border */
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+    background: none; /* No background */
+    width: 15%;
+    min-width: 120px;
+}
+.table .top-row {
+    font-size: 18px;
+    text-align: center;
+}
+.table .sub-row {
+    text-align: right;
+}
+
+/*THICKER BORDER AROUND TABLES*/
+.table tbody tr:last-child td:not(:first-child){
+    border-bottom: 3px solid black; /* Thicker bottom border */
+}
+.table thead tr:first-child th:not(:first-child) {
+    border-top: 3px solid black; /* Thicker top border */
+}
+.table thead th:last-child {
+    border-right: 3px solid black; /* Thicker right border for the header */
+}
+.table tbody td:last-child {
+    border-right: 3px solid black; /* Thicker right border for the body */
+}
+.table tbody td:nth-child(4), td:nth-child(7) {
+    border-right: 3px solid black; /* Thicker right border for the body */
+}
+.table .top-row th:nth-child(2), .top-row th:nth-child(3) {
+    border-right: 3px solid black; /* Thicker right border for the body */
+}
+.table .sub-row th:nth-child(4), .sub-row th:nth-child(7){
+    border-right: 3px solid black; /* Thicker right border for the body */
+}
+
+
+
+.positive {
+    color: green;
+    font-weight: bold;
+}
+
+.negative {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Statistics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app" class="app">
+    <!-- Total Table -->
+    <div class="table-container total-table-container">
+        <br>
+        <br>
+        <total-table :data="totalTableData"></total-table>
+    </div>
+    <!-- Web Full Price Table -->
+    <div class="table-container webfullprice-table-container">
+        <br>
+        <br>
+        <webfullprice-table :data="webFullPriceData"></webfullprice-table>
+    </div>
+    <!-- Full Price Table -->
+    <div class="table-container fullprice-table-container">
+        <br>
+        <br>
+        <fullprice-table :data="fullPriceData"></fullprice-table>
+    </div>
+</div>
+<br>
+<br>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="app.js"></script>
+</body>
+</html>
