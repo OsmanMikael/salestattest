@@ -1,96 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sales Statistics</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div id="app" class="app">
-    <!-- Total Table -->
-    <div class="table-container total-table-container">
-        <br>
-        <br>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <!-- Total Table -->
+      <div class="table-container total-table-container">
+        <br />
+        <br />
         <total-table :data="totalTableData"></total-table>
-    </div>
-    <!-- Web Full Price Table -->
-    <div class="table-container webfullprice-table-container">
-        <br>
-        <br>
+      </div>
+      <!-- Web Full Price Table -->
+      <div class="table-container webfullprice-table-container">
+        <br />
+        <br />
         <webfullprice-table :data="webFullPriceData"></webfullprice-table>
-    </div>
-    <!-- Full Price Table -->
-    <div class="table-container fullprice-table-container">
-        <br>
-        <br><!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Sales Statistics</title>
-            <link rel="stylesheet" href="styles.css" />
-          </head>
-          <body>
-            <div id="app" class="app">
-              <!-- Total Table -->
-              <div class="table-container total-table-container">
-                <br />
-                <br />
-                <total-table :data="totalTableData"></total-table>
-              </div>
-              <!-- Web Full Price Table -->
-              <div class="table-container webfullprice-table-container">
-                <br />
-                <br />
-                <webfullprice-table :data="webFullPriceData"></webfullprice-table>
-              </div>
-              <!-- Full Price Table -->
-              <div class="table-container fullprice-table-container">
-                <br />
-                <br />
-                <fullprice-table :data="fullPriceData"></fullprice-table>
-              </div>
-              <!-- Full Export Table -->
-              <div class="table-container export-table-container">
-                <br />
-                <br />
-                <export-table :data="exportData"></export-table>
-              </div>
-              <!-- Partner Full Price Table -->
-              <div class="table-container partner-table-container">
-                <br />
-                <br />
-                <partner-table :data="partnerData"></partner-table>
-              </div>
-              <!-- Outlet Full Price Table -->
-              <div class="table-container outlet-table-container">
-                <br />
-                <br />
-                <outlet-table :data="outletData"></outlet-table>
-              </div>
-              <!-- Web Outlet Full Price Table -->
-              <div class="table-container web-outlet-table-container">
-                <br />
-                <br />
-                <web-outlet-table :data="webOutletData"></web-outlet-table>
-              </div>
-            </div>
-            <br />
-            <br />
-        
-            <script src="https://unpkg.com/vue@3"></script>
-            <script src="app.js"></script>
-          </body>
-        </html>
-        
+      </div>
+      <!-- Full Price Table -->
+      <div class="table-container fullprice-table-container">
+        <br />
+        <br />
         <fullprice-table :data="fullPriceData"></fullprice-table>
+      </div>
+      <!-- Full Export Table -->
+      <div class="table-container export-table-container">
+        <br />
+        <br />
+        <export-table :data="exportData"></export-table>
+      </div>
+      <!-- Partner Full Price Table -->
+      <div class="table-container partner-table-container">
+        <br />
+        <br />
+        <partner-table :data="partnerData"></partner-table>
+      </div>
+      <!-- Outlet Full Price Table -->
+      <div class="table-container outlet-table-container">
+        <br />
+        <br />
+        <outlet-table :data="outletData"></outlet-table>
+      </div>
+      <!-- Web Outlet Full Price Table -->
+      <div class="table-container web-outlet-table-container">
+        <br />
+        <br />
+        <web-outlet-table :data="webOutletData"></web-outlet-table>
+      </div>
     </div>
-</div>
-<br>
-<br>
+    <br />
+    <br />
+    <!-- Vue 3-->
+    <script src="https://unpkg.com/vue@3"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
